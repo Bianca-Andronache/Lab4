@@ -1,0 +1,7 @@
+<div>
+  <app-game-card
+    *ngFor="let game of gameList"
+    [game]="game"
+    (clickedMore)="navigateToGamePage(game)"
+  ></app-game-card>
+</div>
